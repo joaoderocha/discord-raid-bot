@@ -1,0 +1,24 @@
+{
+  "name": "discord-raid-bot",
+  "version": "0.0.1",
+  "description": "\u001b[2;3~Simple raid bot designed to notify users on discord for raids when certain timestamps are met.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/joaoderocha/discord-raid-bot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "nodejs"
+  ],
+  "author": "Joao Henrique Araujo Rocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoderocha/discord-raid-bot/issues"
+  },
+  "homepage": "https://github.com/joaoderocha/discord-raid-bot#readme"
+}
