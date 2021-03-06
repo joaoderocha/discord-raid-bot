@@ -1,0 +1,35 @@
+{
+  "paimon":{
+    "limitOfCharacter": 20
+  },
+  "erenia":{
+    "limitOfCharacter": 15
+  },
+  "zenas":{
+    "limitOfCharacter": 20
+  },
+  "kirolas":{
+    "limitOfCharacter": 8
+  },
+  "carno":{
+    "limitOfCharacter": 8
+  },
+  "belial":{
+    "limitOfCharacter": 20
+  },
+  "laurena":{
+    "limitOfCharacter": 40
+  },
+  "kertos":{
+    "limitOfCharacter": 15
+  },
+  "valakus":{
+    "limitOfCharacter": 15
+  },
+  "grenigas":{
+    "limitOfCharacter": 15
+  },
+  "fernon":{
+    "limitOfCharacter": 8
+  }
+}
