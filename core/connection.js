@@ -4,8 +4,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const {listOfAvailableCommands} = require('./raidHosting/commands')
-
+const {messageHandler} = require('./messageHandler');
 
 function connect() {
   return new Promise((resolve) => {
@@ -18,35 +17,7 @@ function connect() {
   })
 }
 
-client.on('message',async (msg) => {
-  if (msg.author.bot) {
-    return;
-  }
-
-  if (!msg.content.startsWith('!')) {
-    return;
-  }
-
-  const [,something] = msg.content.split('!');
-
-  const [command, ...args] = something.split(' ');
-
-  console.log(args);
-
-  const handler = listOfAvailableCommands[command];
-
-  if (!handler) {
-    return;
-  }
-
-  try {
-    const response = await handler(...args);
-
-    msg.reply(response);
-  } catch (error) {
-    msg.reply(error)
-  }
-});
+client.on('message', messageHandler);
 
 module.exports = {
   connect,

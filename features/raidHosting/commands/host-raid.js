@@ -2,13 +2,7 @@
 
 const raidList = require('./raidList.json');
 
-module.exports = {
-  listOfAvailableCommands: {
-    hostRaid
-  }
-}
-
-function hostRaid(raidName, timestamp, numberOfCharacters=1) {
+exports.hostRaid = function hostRaid(message, raidName, timestamp, numberOfCharacters=1) {
   const raidProperties = raidList[raidName.toLowerCase()];
   
   if (!raidProperties) {
