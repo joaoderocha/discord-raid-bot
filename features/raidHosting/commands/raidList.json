@@ -1,4 +1,10 @@
 {
+  "valehir":{
+    "limitOfCharacter":15
+  },
+  "alzanor":{
+    "limitOfCharacter":15
+  },
   "paimon":{
     "limitOfCharacter": 20
   },
